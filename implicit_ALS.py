@@ -193,7 +193,8 @@ for alpha, epsilon, n_dim, regu in configurations:
     for i in np.arange(0,10):
 
         model = AlternatingLeastSquares(factors=n_dim, regularization=regu, alpha= alpha,iterations=100, use_gpu=use_gpu, calculate_training_loss= False)#dtype = np.float32, dtype = np.float32)
-        
+
+      #initialize both the GPU and CPU versions of ALS in the same way
         user_factors_base = np.random.uniform(low=0, high=1, size=(user_play.shape[0], model.factors))*0.01
         item_factors_base = np.random.uniform(low=0, high=1, size=(user_play.shape[1], model.factors))*0.01
 
@@ -248,8 +249,6 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.max_colwidth', None)
 pd.set_option('display.width', 0)
 
-print('gpu:', use_gpu, ' n_dim: ', n_dim)
-print(results.groupby(['alpha','epsilon']).agg(['mean', 'std']))
-
+#print the results 
 grouped_results = results.groupby(['alpha','epsilon']).agg(['mean', 'std']).map(lambda x: f"{x:.5f}")
 print(grouped_results)
