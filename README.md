@@ -29,7 +29,7 @@ Run posterior_interpolation.py to obtain the interpolation models. Once these ar
 Please cite our paper if you use this code in your own work:
 
 ```
-@inproceedings{sguerra2025uncertianty,
+@inproceedings{sguerra2025uncertainty,
   title={Uncertainty in Repeated Implicit Feedback as a Measure of Reliability},
   author={Sguerra, Bruno and Tran, Viet-Anh and Hennequin, Romain and Moussallam, Manuel},
   booktitle = {Proceedings of the 33rd ACM Conference on User Modeling, Adaptation and Personalization},
