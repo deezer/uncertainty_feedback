@@ -1,7 +1,7 @@
 # Uncertainty in Repeated Implicit Feedback as a Measure of Reliability
 
-This repository provides our Python code to reproduce the experiments from the paper **Uncertainty in Repeated Implicit Feedback as a Measure of
-Reliability**. The paper was submitted to ACM UMAP 2025. 
+This repository provides our Python code to reproduce experiments from the paper **Uncertainty in Repeated Implicit Feedback as a Measure of
+Reliability**, accepted for publication in the proceedings of the 33rd International ACM Conference on User Modeling, Adaptation and Personalization (UMAP 2025).
 
 ## Abstract
 Recommender systems rely heavily on user feedback to learn effective user and item representations. Despite their widespread adoption, limited attention has been given to the uncertainty inherent in the feedback used to train these systems. Both implicit and explicit feedback are prone to noise due to the variability in human interactions, with implicit feedback being particularly challenging. In collaborative filtering, the reliability of interaction signals is critical, as these signals determine user and item similarities. Thus, deriving accurate confidence measures from implicit feedback is essential for ensuring the reliability of these signals.
