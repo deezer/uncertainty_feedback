@@ -61,6 +61,8 @@ def compute_ndcg(df,k):
 
 #define dataset
 dataset = 'deezer'
+#data need to be preprocessed with a column 'set' with values {'train','validation','test'}
+data_path  = "/data/data_ALS.csv"
 #define weight scheme can be, for the baselines:'linear', 'logarithmic', 'WNeuMF'
 #using uncertainty: 'uncertainty_sum_posterior', 'uncertainty_log_sum_posterior and 'uncertainty_confidence'
 weight = 'uncertainty_sum_posterior'
