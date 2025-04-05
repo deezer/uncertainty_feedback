@@ -15,7 +15,7 @@ This paper addresses this gap by focusing on music streaming, where repeated int
 We will release the data soon.
 
 ## Running the code
-Run posterior_interpolation.py to obtain the interpolation models. Once these are computed, implicit_ALS.py can be used to obtain the recommendation results. The data used for the experiments has to be split into train, validation and test, with both validation and test containing 3 items per user. 
+Running implicit_ALS.py will create the Beta posteriors interpolation files, with the set number of recency bins and the selected prior and will compute the recommendation results for a given weighing scheme. The data used for the experiments has to be split into train, validation and test, with both validation and test containing 2 items per user. 
 
 ## Environment
 
